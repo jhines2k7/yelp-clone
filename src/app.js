@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import styles from './app.css'
+import './app.css'
+import styles from './styles.module.css'
+
 
 const App = React.createClass({
   render: function() {
     return (
-      <div className={styles['container']}>
-        Goodbye world text
+      <div className={styles.wrapper}>
+        <h1>Environment: {__NODE_ENV__}</h1>
       </div>
     );
   }
